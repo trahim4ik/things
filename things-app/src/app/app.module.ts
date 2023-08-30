@@ -23,7 +23,7 @@ import { AppComponent } from './app.component';
         BrowserAnimationsModule,
         HttpClientModule,
         NgxsModule.forRoot([AuthState]),
-        NgxsStoragePluginModule.forRoot({ key: 'auth.token' }),
+        NgxsStoragePluginModule.forRoot({ key: [AuthState] }),
         AuthModule.forRoot(),
         NetworkModule.forRoot(),
     ],
