@@ -1,0 +1,20 @@
+:host {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mat-sidenav-content-background-color);
+    color: var(--mat-sidenav-content-text-color);
+}
+
+mat-tab-group {
+    height: 60vh;
+    width: 50vw;
+    border-radius: 1rem;
+    background-color: var(--mat-sidenav-container-background-color);;
+}
+
+mat-form-field {
+    width: 100%;
+}
