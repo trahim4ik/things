@@ -1,6 +1,8 @@
-export interface Member {
-    email: string;
-    firstName: string;
-    lastName: string;
-    password: string;
+import { BaseEntry } from "@domain/base";
+
+export class Member extends BaseEntry<Member> {
+    public email!: string;
+    public firstName!: string;
+    public lastName!: string;
+    public password!: string;
 }

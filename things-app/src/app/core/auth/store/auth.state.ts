@@ -65,9 +65,7 @@ export class AuthState {
         return this._network.membersApi.register(payload).pipe(
             tap(() => {
                 ctx.setState(
-                    patch<AuthStateModel>({
-                        members: append<Member>([payload])
-                    })
+                    patch<AuthStateModel>({ members: append<Member>([payload]) })
                 );
             })
         );
